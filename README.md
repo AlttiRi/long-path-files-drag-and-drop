@@ -202,10 +202,10 @@ Also, you can access the NT paths directly with special `Nt*` functions (for exa
 - `\DosDevices\C:\XPath\pic.jpg`
 - `\Device\HarddiskVolume4\XPath\pic.jpg`
 
-Use `WinObj64.exe` to explorer the NT Object Manager:
+Use `WinObj64.exe` to explore the NT Object Manager:
 - [https://learn.microsoft.com/en-us/sysinternals/downloads/winobj](https://learn.microsoft.com/en-us/sysinternals/downloads/winobj)
 
-Also, here is a not bad article about Windows paths: 
+Also, here is a good article about Windows paths: 
 - [https://chrisdenton.github.io/omnipath/Overview.html](https://chrisdenton.github.io/omnipath/Overview.html)
 
 Note, in MinGW-w64 linked with legacy MSVCRT there is a bug, that any path with `?` is unsupported 
@@ -425,7 +425,7 @@ When files are dropped into an application, the `Drop` callback is invoked:
 ```c++
 HRESULT STDMETHODCALLTYPE Drop(IDataObject* pDataObject, DWORD, POINTL, DWORD* pdwEffect) override
 {
-    // ..
+    // ...
 
     std::vector<std::wstring> files = m_CollectDroppedFiles(pDataObject);
     m_HandleFilepaths(files);
