@@ -203,14 +203,14 @@ Also, you can access the NT paths directly with special `Nt*` functions (for exa
 - `\Device\HarddiskVolume4\XPath\pic.jpg`
 
 Use `WinObj64.exe` to explorer the NT Object Manager:
-- https://learn.microsoft.com/en-us/sysinternals/downloads/winobj
+- [https://learn.microsoft.com/en-us/sysinternals/downloads/winobj](https://learn.microsoft.com/en-us/sysinternals/downloads/winobj)
 
 Also, here is a not bad article about Windows paths: 
-- https://chrisdenton.github.io/omnipath/Overview.html
+- [https://chrisdenton.github.io/omnipath/Overview.html](https://chrisdenton.github.io/omnipath/Overview.html)
 
 Note, in MinGW-w64 linked with legacy MSVCRT there is a bug, that any path with `?` is unsupported 
 in non-WinAPI functions, even `\\?\` prefix:
-- https://github.com/mingw-w64/mingw-w64/issues/139
+- [https://github.com/mingw-w64/mingw-w64/issues/139](https://github.com/mingw-w64/mingw-w64/issues/139)
 
 Just use MinGW-w64 linked with the modern UCRT.
 
