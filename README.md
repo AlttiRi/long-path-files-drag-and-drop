@@ -307,9 +307,6 @@ static void printFileSize(const wstring& filePath) {
 ### `IsLongPathAwareEnabled` full example
 
 Here is the full example:
-<details>
-<summary>Click here</summary>
-
 ```c++
 #include <windows.h>
 #include <filesystem>
@@ -350,8 +347,6 @@ int main() {
     }
 }
 ```
-
-</details>
 
 ### Verbatim prefix extra details
 
